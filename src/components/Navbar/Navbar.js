@@ -1,6 +1,16 @@
 import React from 'react';
-import { Nav, NavbarContainer, NavLogo } from './NavbarElements';
-import { logo } from '../../images/logo-nav-transparent.png';
+import {
+  Nav,
+  NavbarContainer,
+  NavLogo,
+  Img,
+  MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLinks,
+} from './NavbarElements';
+import { FaBars } from 'react-icons/fa';
+import logo from '../../images/logo-nav-transparent.png';
 
 const Navbar = () => {
   return (
@@ -10,12 +20,59 @@ const Navbar = () => {
           <NavLogo to="/">
             <Img src={logo} alt="Valmore Logo" />
           </NavLogo>
+
           <MobileIcon>
             <FaBars />
           </MobileIcon>
+
           <NavMenu>
             <NavItem>
-              <NavLinks to="home">Home</NavLinks>
+              <NavLinks
+                to="home"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={750}
+              >
+                Home
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="about"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={750}
+              >
+                About
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="services"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={750}
+              >
+                Services
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="home"
+                activeClass="contact"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={750}
+              >
+                Contact
+              </NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
