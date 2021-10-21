@@ -12,7 +12,9 @@ import {
 import { FaBars } from 'react-icons/fa';
 import logo from '../../images/logo-nav-transparent.png';
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { toggle } = props;
+
   return (
     <>
       <Nav>
@@ -21,7 +23,7 @@ const Navbar = () => {
             <Img src={logo} alt="Valmore Logo" />
           </NavLogo>
 
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
 
