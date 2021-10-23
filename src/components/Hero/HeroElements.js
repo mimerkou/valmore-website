@@ -6,9 +6,26 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 3rem;
-  height: 80rem;
+  /* height: 80rem; */
+  min-height: 100vh;
   position: relative;
   z-index: 1;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    z-index: 2;
+  }
 `;
 
 export const HeroBg = styled.div`
@@ -27,4 +44,49 @@ export const VideoBg = styled.video`
   height: 100%;
   object-fit: cover;
   background: #232a34;
+`;
+
+export const HeroContent = styled.div`
+  z-index: 3;
+  max-width: 110rem;
+  position: absolute;
+  padding: 0.8rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const HeroH1 = styled.h1`
+  color: white;
+  font-size: 4.8rem;
+  text-align: center;
+  letter-spacing: 1.2px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 3.2rem;
+  }
+`;
+
+export const HeroP = styled.p`
+  margin-top: 0.5rem;
+  color: white;
+  font-size: 2.4rem;
+  text-align: center;
+  max-width: 60rem;
+  letter-spacing: 0.8px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.8rem;
+  }
+`;
+
+export const HeroBtnWrapper = styled.div`
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
