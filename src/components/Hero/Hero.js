@@ -31,9 +31,9 @@ const Hero = () => {
           <Button
             to="about"
             spy={true}
-            smooth={true}
             offset={-80}
-            duration={750}
+            smooth={true}
+            // duration={750}
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
