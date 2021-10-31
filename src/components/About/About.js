@@ -49,8 +49,7 @@ const About = () => {
             <ButtonWrap>
               <Button
                 to="services"
-                primary="true"
-                dark="true"
+                darkBg={true}
                 smooth={true}
                 spy={true}
                 // duration={500}

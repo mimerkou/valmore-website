@@ -8,8 +8,9 @@ import {
   CardBox,
   Card,
   Content,
-  ReachOutButton,
+  ServicesBtnWrap,
 } from './ServicesElements';
+import { Button } from '../Button/Button';
 import 'aos/dist/aos.css';
 
 const Services = () => {
@@ -97,18 +98,22 @@ const Services = () => {
           </Card>
         </CardBox>
 
-        <ReachOutButton
-          to="contact"
-          smooth={true}
-          spy={true}
-          // duration={500}
-          offset={-80}
+        <ServicesBtnWrap
           data-aos="zoom-in"
           data-aos-delay="280"
           data-aos-once="true"
         >
-          Reach Out Now
-        </ReachOutButton>
+          <Button
+            to="contact"
+            smooth={true}
+            spy={true}
+            // duration={500}
+            offset={-80}
+            darkBg={false}
+          >
+            Reach Out Now
+          </Button>
+        </ServicesBtnWrap>
       </ServicesContainer>
     </>
   );

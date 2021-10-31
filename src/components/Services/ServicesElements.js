@@ -249,25 +249,6 @@ export const Content = styled.div`
   }
 `;
 
-export const ReachOutButton = styled(Link)`
-  border-radius: 50px;
-  background: #f48599;
-  white-space: nowrap;
-  margin-top: 50px;
-  padding: 12px 30px;
-  color: #010606;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 1s ease-in-out;
-
-  &:hover {
-    transition: all 1s ease-in-out;
-    background: #010606;
-    color: #fff;
-  }
+export const ServicesBtnWrap = styled.div`
+  margin-top: 5rem;
 `;

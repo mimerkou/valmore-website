@@ -36,8 +36,7 @@ const Hero = () => {
             // duration={750}
             onMouseEnter={onHover}
             onMouseLeave={onHover}
-            primary="true"
-            dark="true"
+            darkBg={true}
           >
             Discover More
           </Button>
