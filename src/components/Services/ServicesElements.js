@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-scroll';
 import service1Image from '../../images/service1.jpg';
 import service2Image from '../../images/service2.jpg';
 import service3Image from '../../images/service3.jpg';
