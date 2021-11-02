@@ -143,39 +143,39 @@ const Contact = () => {
               <p>* All fields are required.</p>
 
               <InputBox>
+                <label>Name</label>
                 <input
                   type="text"
                   name="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
-                <span>Name</span>
                 {Object.keys(nameError).map((key, index) => {
                   return <p key={index}>{nameError[key]}</p>;
                 })}
               </InputBox>
 
               <InputBox>
+                <label>Email</label>
                 <input
                   type="email"
                   name="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <span>Email</span>
                 {Object.keys(emailError).map((key, index) => {
                   return <p key={index}>{emailError[key]}</p>;
                 })}
               </InputBox>
 
               <InputBox>
+                <label>Type your message...</label>
                 <textarea
                   name="message"
-                  rows="5"
+                  rows="7"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
-                <span>Type your message...</span>
                 {Object.keys(messageError).map((key, index) => {
                   return <p key={index}>{messageError[key]}</p>;
                 })}

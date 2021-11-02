@@ -147,7 +147,14 @@ export const ContactForm = styled.div`
 export const InputBox = styled.div`
   position: relative;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 1rem;
+
+  & label {
+    padding-left: 2px;
+    color: #f48599;
+    font-size: 1.2rem;
+    margin: 0;
+  }
 
   & input {
     height: 4rem;
@@ -164,27 +171,6 @@ export const InputBox = styled.div`
     border-bottom: 2px solid #333;
     outline: none;
     resize: none;
-  }
-
-  & span {
-    position: absolute;
-    left: 0;
-    padding: 2px;
-    color: #f48599;
-    font-size: 1.6rem;
-    margin: 1rem 0;
-    pointer-events: none;
-    /* color: #666;  */
-    transition: all 0.5s;
-  }
-
-  & input:focus ~ span,
-  & input:valid ~ span,
-  & textarea:focus ~ span,
-  & textarea:valid ~ span {
-    color: #f48599;
-    font-size: 1.2rem;
-    transform: translateY(-2rem);
   }
 
   & input[type='submit'] {
@@ -213,6 +199,7 @@ export const InputBox = styled.div`
     color: tomato;
     font-size: 1.2rem;
     padding: 0;
+    padding-left: 2px;
     margin-top: -0.5rem;
     margin-bottom: 2rem;
   }
