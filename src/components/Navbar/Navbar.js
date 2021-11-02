@@ -35,7 +35,7 @@ const Navbar = (props) => {
                 spy={true}
                 smooth={true}
                 offset={-80}
-                duration={750}
+                // duration={750}
               >
                 Home
               </NavLinks>
@@ -47,7 +47,7 @@ const Navbar = (props) => {
                 spy={true}
                 smooth={true}
                 offset={-80}
-                duration={750}
+                // duration={750}
               >
                 About
               </NavLinks>
@@ -59,7 +59,7 @@ const Navbar = (props) => {
                 spy={true}
                 smooth={true}
                 offset={-80}
-                duration={750}
+                // duration={750}
               >
                 Services
               </NavLinks>
@@ -71,7 +71,7 @@ const Navbar = (props) => {
                 spy={true}
                 smooth={true}
                 offset={-80}
-                duration={750}
+                // duration={750}
               >
                 Contact
               </NavLinks>
