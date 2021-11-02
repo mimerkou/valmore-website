@@ -66,8 +66,8 @@ const Navbar = (props) => {
             </NavItem>
             <NavItem>
               <NavLinks
-                to="home"
-                activeClass="contact"
+                to="contact"
+                activeClass="active"
                 spy={true}
                 smooth={true}
                 offset={-80}
