@@ -41,7 +41,7 @@ const Footer = () => {
           </Social>
 
           <Carrers>
-            <CarrerLink to="/careers">Carrers</CarrerLink>
+            <CarrerLink to="/careers">Careers</CarrerLink>
           </Carrers>
         </FooterWrapper>
       </FooterContainer>
