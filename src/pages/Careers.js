@@ -32,6 +32,12 @@ const CareerInfo = styled.div`
     text-decoration: underline;
     margin-bottom: 4rem;
   }
+
+  @media screen and (max-width: 535px) {
+    & h2 {
+      font-size: 4rem;
+    }
+  }
 `;
 
 const LogoImg = styled.img`
@@ -57,6 +63,15 @@ const Text = styled.div`
   & li {
     margin: 0.8rem 0;
     line-height: 1.4;
+  }
+`;
+
+const Mail = styled.a`
+  color: #fff;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #f48599;
   }
 `;
 
@@ -163,7 +178,9 @@ const Careers = () => {
           <p>
             If you are interested in this opportunity and feel that your skills
             are compatible with the above requirements, feel free to send us
-            your CV anytime at info@valmore.gr - we always respond!
+            your CV anytime at:{' '}
+            <Mail href="mailto:info@valmore.gr">info@valmore.gr</Mail> - we
+            always respond!
           </p>
         </Text>
 

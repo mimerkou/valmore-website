@@ -107,8 +107,7 @@ const Services = () => {
             to="contact"
             smooth={true}
             spy={true}
-            // duration={500}
-            offset={-80}
+            offset={-75}
             darkBg={false}
           >
             Reach Out Now
