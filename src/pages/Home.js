@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import About from '../components/About/About';
 import Contact from '../components/Contact/Contact';
 import Copyright from '../components/Copyright/Copyright';
@@ -14,6 +15,12 @@ const Home = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <>

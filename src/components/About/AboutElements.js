@@ -24,6 +24,7 @@ export const AboutBox = styled.div`
   height: 100%;
   margin-bottom: 1.5rem;
   padding: 0 1.5rem 0 0;
+  overflow-x: hidden;
 `;
 
 export const TopLine = styled.p`

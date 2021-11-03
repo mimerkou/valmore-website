@@ -61,7 +61,7 @@ const About = () => {
           </AboutBox>
 
           <AboutBox
-            data-aos="fade-left"
+            data-aos="zoom-in"
             data-aos-duration="1500"
             data-aos-once="true"
           >

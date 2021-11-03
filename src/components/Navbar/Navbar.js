@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Nav,
   NavbarContainer,
@@ -10,16 +10,35 @@ import {
   NavLinks,
 } from './NavbarElements';
 import { FaBars } from 'react-icons/fa';
+import { animateScroll } from 'react-scroll';
 import logo from '../../images/logo-nav-transparent.png';
 
 const Navbar = (props) => {
   const { toggle } = props;
 
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY > 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+  }, []);
+
+  const toggleHome = () => {
+    animateScroll.scrollToTop();
+  };
+
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/">
+          <NavLogo to="/" onClick={toggleHome}>
             <Img src={logo} alt="Valmore Logo" />
           </NavLogo>
 
@@ -35,7 +54,6 @@ const Navbar = (props) => {
                 spy={true}
                 smooth={true}
                 offset={-80}
-                // duration={750}
               >
                 Home
               </NavLinks>
@@ -47,7 +65,6 @@ const Navbar = (props) => {
                 spy={true}
                 smooth={true}
                 offset={-80}
-                // duration={750}
               >
                 About
               </NavLinks>
@@ -59,7 +76,6 @@ const Navbar = (props) => {
                 spy={true}
                 smooth={true}
                 offset={-80}
-                // duration={750}
               >
                 Services
               </NavLinks>
@@ -71,7 +87,6 @@ const Navbar = (props) => {
                 spy={true}
                 smooth={true}
                 offset={-80}
-                // duration={750}
               >
                 Contact
               </NavLinks>

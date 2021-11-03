@@ -19,16 +19,40 @@ const Sidebar = (props) => {
 
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="home" onClick={toggle}>
+          <SidebarLink
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            onClick={toggle}
+          >
             Home
           </SidebarLink>
-          <SidebarLink to="about" onClick={toggle}>
+          <SidebarLink
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            onClick={toggle}
+          >
             About
           </SidebarLink>
-          <SidebarLink to="services" onClick={toggle}>
+          <SidebarLink
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            onClick={toggle}
+          >
             Services
           </SidebarLink>
-          <SidebarLink to="contact" onClick={toggle}>
+          <SidebarLink
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            onClick={toggle}
+          >
             Contact
           </SidebarLink>
         </SidebarMenu>

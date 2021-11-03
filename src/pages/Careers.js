@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../images/logo-nav-transparent.png';
 import careerBgImage from '../images/careers.jpg';
 
@@ -76,6 +76,12 @@ const HomeBtn = styled(Link)`
 `;
 
 const Careers = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <CareersContainer>
       <CareerInfo>
