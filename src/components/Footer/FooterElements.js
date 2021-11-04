@@ -49,7 +49,12 @@ export const Linkedin = styled.div`
 `;
 
 export const Carrers = styled.div`
-  margin: 2.5rem 0;
+  margin: 2.8rem 0;
+  /* transition: all 0.3s;
+
+  &:hover {
+    color: #f48599;
+  } */
 `;
 
 export const CarrerLink = styled(Link)`
@@ -57,25 +62,13 @@ export const CarrerLink = styled(Link)`
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 1rem 2rem;
   transition: all 0.3s;
-
-  /* Color animation */
-  /* animation: animateColor 3s infinite;
-
-  @keyframes animateColor {
-    0% {
-      color: #fff;
-    }
-    50% {
-      color: #f48599;
-    }
-    100% {
-      color: #fff;
-    }
-  } */
-  /* End color animation */
 
   &:hover {
     color: #f48599;
+    border-color: #f48599;
   }
 `;
