@@ -59,6 +59,22 @@ export const CarrerLink = styled(Link)`
   color: #fff;
   transition: all 0.3s;
 
+  /* Color animation */
+  /* animation: animateColor 3s infinite;
+
+  @keyframes animateColor {
+    0% {
+      color: #fff;
+    }
+    50% {
+      color: #f48599;
+    }
+    100% {
+      color: #fff;
+    }
+  } */
+  /* End color animation */
+
   &:hover {
     color: #f48599;
   }
