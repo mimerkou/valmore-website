@@ -64,7 +64,7 @@ const Navbar = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-75}
+                offset={-80}
               >
                 About
               </NavLinks>
@@ -75,7 +75,7 @@ const Navbar = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-75}
+                offset={-80}
               >
                 Services
               </NavLinks>
@@ -86,7 +86,7 @@ const Navbar = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-75}
+                offset={-80}
               >
                 Contact
               </NavLinks>
