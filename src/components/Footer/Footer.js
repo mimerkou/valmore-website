@@ -10,6 +10,7 @@ import {
   Carrers,
   CarrerLink,
 } from './FooterElements';
+import 'aos/dist/aos.css';
 
 const Footer = () => {
   return (
@@ -40,7 +41,11 @@ const Footer = () => {
             </SocialIcons>
           </Social>
 
-          <Carrers>
+          <Carrers
+            data-aos="zoom-out-up"
+            data-aos-once="true"
+            data-aos-duration="1250"
+          >
             <CarrerLink to="/careers">Careers</CarrerLink>
           </Carrers>
         </FooterWrapper>

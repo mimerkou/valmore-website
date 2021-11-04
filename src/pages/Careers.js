@@ -23,20 +23,18 @@ const CareerInfo = styled.div`
   padding: 0 3rem 5rem 3rem;
   margin: 2.5rem 2.5rem 4rem 2.5rem;
   text-align: center;
+`;
 
-  & h2 {
-    color: #fff;
-    font-size: 4.8rem;
-    font-weight: 600;
-    line-height: 1.1;
-    text-decoration: underline;
-    margin-bottom: 4rem;
-  }
+const Heading = styled.h2`
+  color: #fff;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 1.1;
+  text-decoration: underline;
+  margin-bottom: 4rem;
 
   @media screen and (max-width: 535px) {
-    & h2 {
-      font-size: 4rem;
-    }
+    font-size: 4rem;
   }
 `;
 
@@ -58,6 +56,7 @@ const Text = styled.div`
 
   & h4 {
     font-weight: bold;
+    font-size: 2rem;
   }
 
   & li {
@@ -101,7 +100,7 @@ const Careers = () => {
     <CareersContainer>
       <CareerInfo>
         <LogoImg src={logo} alt="Valmore Logo" />
-        <h2>Careers</h2>
+        <Heading>Careers</Heading>
         <Text>
           <p>
             At Valmore, we are always looking for talented people to join our
