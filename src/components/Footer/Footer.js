@@ -46,7 +46,7 @@ const Footer = () => {
             data-aos-once="true"
             data-aos-duration="1250"
           >
-            <CarrerLink to="/careers">Careers</CarrerLink>
+            <CarrerLink to="/careers">We are hiring!</CarrerLink>
           </Carrers>
         </FooterWrapper>
       </FooterContainer>
