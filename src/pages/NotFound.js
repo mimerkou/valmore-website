@@ -33,6 +33,7 @@ const ErrorP = styled.p`
 const HomeBtn = styled(Link)`
   text-decoration: none;
   white-space: nowrap;
+  font-size: 1.6rem;
   border-radius: 5rem;
   padding: 1.2rem 3rem;
   background: #f48599;
@@ -41,7 +42,6 @@ const HomeBtn = styled(Link)`
 
   &:hover {
     background: #fff;
-    color: #010606;
   }
 `;
 
