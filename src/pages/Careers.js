@@ -183,7 +183,7 @@ const Careers = () => {
           </p>
         </Text>
 
-        <HomeBtn to="/">Back Home</HomeBtn>
+        <HomeBtn to="/valmore-website">Back Home</HomeBtn>
       </CareerInfo>
     </CareersContainer>
   );

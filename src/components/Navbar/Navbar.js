@@ -38,7 +38,7 @@ const Navbar = (props) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/" onClick={toggleHome}>
+          <NavLogo to="/valmore-website" onClick={toggleHome}>
             <Img src={logo} alt="Valmore Logo" />
           </NavLogo>
 

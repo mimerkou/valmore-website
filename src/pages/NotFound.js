@@ -51,7 +51,7 @@ const NotFound = () => {
       <ErrorInfo>
         <ErrorH2>Oops! Page not found</ErrorH2>
         <ErrorP>The page you were looking for does not exist.</ErrorP>
-        <HomeBtn to="/">Back Home</HomeBtn>
+        <HomeBtn to="/valmore-website">Back Home</HomeBtn>
       </ErrorInfo>
     </ErrorPage>
   );
