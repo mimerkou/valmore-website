@@ -142,7 +142,7 @@ const Careers = () => {
           <ul>
             <li>
               At least 2 years of prior experience in web development and
-              Javascript in particular
+              JavaScript in particular
             </li>
             <li>
               Essential Stack skills: JavaScript/JQuery, React.js, Node.js,

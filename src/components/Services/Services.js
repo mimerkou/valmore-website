@@ -60,12 +60,7 @@ const Services = () => {
         </CardBox>
 
         <CardBox>
-          <Card
-            className="card3"
-            data-aos="zoom-in"
-            // data-aos-delay="500"
-            data-aos-once="true"
-          >
+          <Card className="card3" data-aos="zoom-in" data-aos-once="true">
             <Content>
               <h2>03</h2>
               <h3>
@@ -107,7 +102,7 @@ const Services = () => {
             to="contact"
             smooth={true}
             spy={true}
-            offset={-75}
+            offset={-80}
             darkBg={false}
           >
             Reach Out Now

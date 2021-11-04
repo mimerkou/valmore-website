@@ -52,7 +52,7 @@ const About = () => {
                 darkBg={true}
                 smooth={true}
                 spy={true}
-                offset={-75}
+                offset={-80}
               >
                 View Services
               </Button>

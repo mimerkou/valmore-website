@@ -184,7 +184,13 @@ const Contact = () => {
               <InputBox>
                 <input type="submit" value="Send" />
                 {success && (
-                  <p style={{ color: 'white', fontSize: '1.6rem' }}>
+                  <p
+                    style={{
+                      color: 'white',
+                      fontSize: '1.6rem',
+                      marginTop: '2rem',
+                    }}
+                  >
                     {success}
                   </p>
                 )}
