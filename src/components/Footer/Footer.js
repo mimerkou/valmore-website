@@ -42,9 +42,9 @@ const Footer = () => {
           </Social>
 
           <Carrers
-            data-aos="zoom-out-up"
-            data-aos-once="true"
-            data-aos-duration="1250"
+          // data-aos="zoom-out-up"
+          // data-aos-once="true"
+          // data-aos-duration="1250"
           >
             <CarrerLink to="/careers">We are hiring!</CarrerLink>
           </Carrers>

@@ -4,6 +4,6 @@ export const CopyrightContainer = styled.div`
   background: #505050;
   color: #fff;
   padding: 1rem 0 1.5rem 0;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
 `;
