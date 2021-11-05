@@ -17,6 +17,10 @@ export const AboutWrapper = styled.div`
   @media screen and (max-width: 900px) {
     flex-wrap: wrap;
   }
+
+  @media screen and (max-width: 480px) {
+    padding: 5.5rem 2.4rem;
+  }
 `;
 
 export const AboutBox = styled.div`

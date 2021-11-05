@@ -19,6 +19,10 @@ export const ContactWrapper = styled.div`
   padding: 10rem 2.4rem;
   margin: 0 auto;
   max-width: 110rem;
+
+  @media screen and (max-width: 480px) {
+    padding: 5.5rem 2.4rem;
+  }
 `;
 
 export const ContactText = styled.div`

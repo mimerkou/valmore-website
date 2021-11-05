@@ -15,6 +15,10 @@ export const ServicesContainer = styled.div`
   max-width: 110rem;
   margin: 0 auto;
   padding: 10rem 0;
+
+  @media screen and (max-width: 480px) {
+    padding: 5.5rem 0;
+  }
 `;
 
 export const TextWrapper = styled.div`
