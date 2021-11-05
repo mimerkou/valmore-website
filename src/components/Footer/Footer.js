@@ -24,7 +24,7 @@ const Footer = () => {
                 <a
                   href="https://www.facebook.com/valmoretechnologies"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <i className="fab fa-facebook-square"></i>
                 </a>
@@ -33,7 +33,7 @@ const Footer = () => {
                 <a
                   href="https://www.linkedin.com/company/valmore-technologies/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <i className="fab fa-linkedin"></i>
                 </a>
